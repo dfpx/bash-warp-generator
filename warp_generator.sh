@@ -52,6 +52,6 @@ echo "${conf}"
 
 conf_base64=$(echo -n "${conf}" | base64 -w 0)
 echo -e "\n"
-echo "Скачать конфиг файлом:"
+echo "↓↓↓↓↓↓ ССЫЛКА ДЛЯ СКАЧИВАНИЯ КОНФИГА ↓↓↓↓↓↓"
 echo "https://dfpx.github.io/downloader.html?filename=WARP.conf&content=${conf_base64}"
 echo -e "\n"
