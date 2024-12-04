@@ -46,12 +46,7 @@ Endpoint = 188.114.97.66:3138
 EOM
 )
 
-[ -t 1 ] && echo -e "################ НАЧАЛО КОНФИГА ################\n"
-echo "${conf}"
-[ -t 1 ] && echo -e "\n################ КОНЕЦ КОНФИГА ################"
-
 conf_base64=$(echo -n "${conf}" | base64 -w 0)
-echo -e "\n"
-echo "↓↓↓↓↓↓ ССЫЛКА ДЛЯ СКАЧИВАНИЯ КОНФИГА ↓↓↓↓↓↓"
+echo -e "↓↓↓↓↓↓ ССЫЛКА ДЛЯ СКАЧИВАНИЯ КОНФИГА ↓↓↓↓↓↓\n"
 echo "https://dfpx.github.io/downloader.html?filename=WARP.conf&content=${conf_base64}"
 echo -e "\n"
